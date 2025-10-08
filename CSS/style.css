@@ -1,0 +1,307 @@
+/* comentario CSS */
+
+/* Paleta cromatica */
+/* #0B3D91 (azul) */
+/* #FF8040 (naranja) */
+
+
+/* etiquetas */
+
+/* Tipografia */
+/*   font-family: "Roboto", sans-serif; */
+
+/* Quitar márgenes y padding globales */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{color: black;}
+body{font-family: "Roboto", sans-serif;}
+
+
+/* clases */
+
+
+/* CTA DIV */
+.cta-viajes {
+  background: linear-gradient(135deg, #0B3D91, #3c6ec4);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-radius: 1.5rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.cta-viajes h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-viajes p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.btn-contactar {
+  background-color: #ff8040;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contactar:hover {
+  background-color: #ff4a29;
+}
+
+
+/* Header----------------------------------------------------- */
+
+header{background-color: #0B3D91;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ padding-top: 10px;
+ position: sticky;
+ top: 0;
+}
+
+header nav {width: 30%;
+margin-top: 30px;}
+
+header nav ul{list-style: none;
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+ height: 100%; 
+ margin: 0px 100px 0px 0px;
+}
+
+header ul li a{color: #fff;
+ text-decoration: none;
+ font-size: 1.3rem;
+ font-family: "Roboto", sans-serif;
+}
+
+header img {margin: 10px 80px;
+}
+
+/* Main Index */
+
+
+
+.contenedor-grid img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.contenedor-grid{
+  display: grid;
+  grid-template-areas: 
+  
+  "titulo-2 titulo-2 titulo-2"
+  "img-1 texto-1 texto-1"
+  "img-1 img-2 img-2"
+  "texto-2 img-3 texto-3";
+
+  grid-template-columns: 20% 40% 20%;
+  grid-template-rows: 100px 150px 250px 250px;
+  gap: 5px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.titulo-2{
+  grid-area: titulo-2; 
+}
+
+.img-1{
+  grid-area: img-1;
+}
+
+.texto-1{
+  grid-area: texto-1;
+}
+
+.img-2{
+  grid-area: img-2;
+}
+
+.texto-2{
+  grid-area: texto-2;
+}
+
+.img-3{
+  grid-area: img-3;
+}
+
+.texto-3{ grid-area: texto-3;}
+
+
+
+
+.titulo{text-align: center;
+ text-decoration: none;
+ font: weight 800px;
+ width: 40%;
+ padding:  80px 70px 0 145px;
+}
+
+.texto-blanco{color:#fff;
+text-align: center;
+font-size: 1.3rem;
+border-radius: 0 0 10px 0;
+width: 40%;
+padding:  10px 70px 50px 145px;
+}
+
+
+
+.banner{background-image: url(../contenido/Banner1.jpg);
+ width: 100%;
+ height: 100vh;                     /* o 100vh para ocupar toda la pantalla */
+ background-position:center;
+ background-size: cover;
+ text-align: center; 
+ color: #fff;
+ font-size: 1.2;
+}
+
+.destinos{display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  text-align: left;
+}
+
+.tendencias{text-align: center;
+padding-top: 30px;}
+
+/* Footer----------------------------------------------------- */
+footer{background-color: #0B3D91;
+  color: #fff;
+ padding: 48px;
+}
+
+.cierre{font-size: 1.2rem;
+padding-bottom: 16px;
+}
+ 
+footer ul{ padding-bottom: 16px;}
+
+.logow{
+  position: fixed;
+  right: 70px;
+  bottom: 70px;
+}
+
+
+
+
+/* Responsive movile------------------------------------------- */
+
+/* Responsive móvil ------------------------------------------- */
+@media (max-width: 480px) { 
+  body {
+    background-color: antiquewhite;
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header img {
+    width: 50%;
+  }
+
+  nav {
+    width: 90%;
+    margin: 10px;
+  }
+
+  header nav {
+    width: 100%;          /* ocupar todo el header */
+    margin: 0;            /* eliminar márgenes */
+    padding: 0;  
+  }
+
+  header nav ul {
+    width: 100%;       /* ocupa todo el ancho del nav */
+    margin: 0;         /* elimina margen del ul */
+    padding: 0;        /* elimina padding interno */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header nav ul li a {
+     font-size: 1.1rem;
+    display: block;
+    padding: 10px;
+  }
+
+
+ .banner {
+    height: 60vh;               /* reduce la altura en mobile */
+    padding: 20px;              /* espacio interno para que el texto no quede pegado */
+    background-position: center top; /* centra la imagen en la parte superior */
+  }
+
+  .banner .titulo {
+    font-size: 1.5rem;          /* tamaño más pequeño para mobile */
+    padding: 20px 10px;         /* ajusta el padding interno */
+  }
+
+  .banner .texto-blanco {
+    font-size: 1rem;            /* tamaño del párrafo más pequeño */
+    padding: 10px 15px 20px 15px;
+  }
+
+
+  /* porqué viajar con TerraTurismo */
+  .contenedor-grid {
+    grid-template-areas: 
+      "titulo-2"
+      "texto-1"
+      "img-1"
+      "texto-2"
+      "img-2"
+      "texto-3"
+      "img-3";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    margin: 0 20px;
+    gap: 0;
+  }
+
+  .titulo-2 {
+    text-align: center;
+    padding: 50px 50px 0 50px;
+  }
+}
+
+
+/* Responsive tablet------------------------------------------- */
+@media (min-width:481px) and (max-width: 780px){
+  body{background-color: aliceblue;}
+}
