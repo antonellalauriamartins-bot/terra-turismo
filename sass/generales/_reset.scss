@@ -1,0 +1,40 @@
+
+
+/* etiquetas */
+
+/* Tipografia */
+/*   font-family: "Roboto", sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p{color: black;}
+body{font-family: "Roboto", sans-serif;}
+
+
+/* clases */
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+

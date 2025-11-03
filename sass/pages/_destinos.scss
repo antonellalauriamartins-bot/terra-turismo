@@ -1,0 +1,24 @@
+
+
+.destinos{display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  text-align: left;
+}
+
+.tendencias{text-align: center;
+   padding-top: 30px;
+  
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+ }

@@ -1,0 +1,141 @@
+
+
+
+@media (max-width: 480px) { 
+
+  
+   * {
+      box-sizing: border-box; 
+    }
+
+    body {
+       width: 100%;
+       max-width: 100%;
+       overflow-x: hidden;
+       margin: 0;
+       padding: 0;
+    }
+       
+       
+    
+
+
+    header {
+      flex-direction: column;
+        img {
+          width: 50%;
+        }
+        nav {
+          width: 100%;          /* ocupar todo el header */
+          margin: 0;            
+          padding: 0;  
+
+            ul {
+              width: 100%;       /* ocupa todo el ancho del nav */
+              margin: 0;         /* elimina margen del ul */
+              padding: 0;        /* elimina padding interno */
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+
+                li a {
+                  font-size: 1.1rem;
+                  display: block;
+                  padding: 10px;
+                }
+            }
+        }
+    }
+
+ 
+ .banner {
+      height: 60vh;               /* reduce la altura en mobile */
+      padding: 5px;             
+      background-position: center top; 
+      justify-content: center;
+       .titulo {
+           font-size: 1.3rem;         
+          padding-top: 20%
+        }
+       .texto-blanco {
+          font-size: 1.2rem;         
+        }
+    }
+
+   .banner-texto {
+       max-width: 100%;
+    }
+
+
+  /* porqué viajar con TerraTurismo */
+  .contenedor-grid {
+       grid-template-areas: 
+      "titulo-2"
+      "texto-1"
+      "img-3"
+      "texto-2"
+      "img-2"
+      "texto-3"
+      ;
+      grid-template-columns: 100%;
+      grid-template-rows: 150px  230px 300px 200px 180px 250px;
+      margin: 0 auto;
+      padding: 0 20px;
+      gap: 0;
+      font-size: 1rem;
+    }
+
+  .img-1{
+      display: none;
+    }
+
+  .titulo-2 {
+      text-align: center;
+      padding: 20px 20px 10px 20px;
+      font-size: 1.3rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+   .cta-viajes{
+      width: 90%;
+      justify-content: center;
+    }
+
+
+   ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+
+   .formulario-contacto {
+      margin: 20px;
+      padding: 1.5rem;
+    }
+
+   .cta-viajes{
+      border-radius: 10px;
+    }
+ 
+  .logow{
+     position: fixed;
+     right: 20px;
+     bottom: 20px;
+     max-width: 80px;
+  
+    }
+
+}
+
+
+
+/* Responsive tablet------------------------------------------- */
+@media (min-width:481px) and (max-width: 780px){
+  body{background-color: aliceblue;}
+}

@@ -1,0 +1,15 @@
+// comentario de sass
+
+
+/** comentario css*/
+
+@use "./generales/variables";
+@use "./generales/reset";
+@use "./generales/headerFooter";
+@use "./pages/index";
+@use "./pages/destinos";
+@use "./pages/contacto";
+
+
+@use "./generales/mediaQ"
+
