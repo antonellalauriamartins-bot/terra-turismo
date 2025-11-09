@@ -136,6 +136,79 @@
 
 
 /* Responsive tablet------------------------------------------- */
-@media (min-width:481px) and (max-width: 780px){
-  body{background-color: aliceblue;}
-}
+@media (min-width:481px) and (max-width: 1024px){
+  header{ flex-direction: column;
+  justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+
+    img {
+      margin: 5px 0;
+      width: 200px; /* reduce el tamaño del logo */
+    }
+
+    nav {
+      width: 100%;
+      margin-top: 10px;
+
+      ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px; /* separa los enlaces */
+        margin: 0;
+        padding: 0;
+      }
+
+      li a {
+        font-size: 1.1rem; /* más chico para tablet */
+      }
+    }
+  }
+  .contenedor-grid {
+    grid-template-areas:
+      "titulo-2"
+      "img-1"
+      "texto-1"
+      "img-2"
+      "texto-2"
+      "img-3"
+      "texto-3";
+    grid-template-columns: 90%;
+    grid-template-rows: auto;
+    gap: 25px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .img-1{
+      display: none;
+    }
+
+  .titulo-2 {
+    padding-top: 15%;
+   padding-bottom: 0;
+    font-size: 1.4rem;
+  }
+
+  .contenedor-grid img {
+    width: 80%;
+    height: auto;
+    border-radius: 2%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .texto-1,
+  .texto-2,
+  .texto-3 {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+  
+  }
+
+  
